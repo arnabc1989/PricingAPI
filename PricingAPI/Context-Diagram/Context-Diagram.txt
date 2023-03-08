@@ -1,0 +1,42 @@
+﻿                       +------------------------+
+                       |   Pricing Feed System   |
+                       +------------------------+
+                                   |
+                      +------------------------+
+                      |      CSV Uploader       |
+                      +------------------------+
+                                   |
+                      +------------------------+
+                      |       Database         |
+                      +------------------------+
+
+In this diagram, the Pricing Feed System is the system being developed, and it interacts with a CSV uploader and 
+a database to upload and persist pricing feeds from retail stores. The CSV uploader reads CSV files that contain 
+Store ID, SKU, Product Name, Price, and Date information and sends this data to the Pricing Feed System.
+The Pricing Feed System then stores this data in a database for future use.
+
+
+                       +-----------------------+
+                      |  Pricing Records System|
+                      +-----------------------+
+                                   |
+                +-----------------------+-----------------------+
+                |         Search        |       Record Editor    |
+                +-----------------------+-----------------------+
+                                   |
+                      +-----------------------+
+                      |         Database      |
+                      +-----------------------+
+
+In this diagram, the Pricing Records System is the system being developed, and it interacts with a Search module, 
+a Record Editor module, and a database. The Search module allows users to search for pricing records using various 
+criteria, such as Store ID, SKU, Product Name, Price, and Date.The Record Editor module allows users to edit pricing 
+records and save changes to the database.
+
+All these workflows are based on API CRUD operation. For simplicity purpose, it has been developed using .NET Core Web API 
+Framework using Repository pattern but can be scalable and migrated to different module segregation if more factors and
+criteria get involved.
+
+N.B: 
+This context diagram is a high-level representation of the system, and does not show any external entities that 
+might interact with the Pricing Feed System, such as other systems, users, or devices.

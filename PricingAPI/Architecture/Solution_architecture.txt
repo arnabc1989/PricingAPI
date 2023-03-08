@@ -1,0 +1,78 @@
+﻿At high level if we visualize the solution architecture of the e2e application, it should consist of a data ingestion 
+component, a storage layer, a data processing component, a data access component, an analytics component, a security 
+component, a monitoring and alerting component, and a scalability component.
+
+
+To upload and persist pricing feeds from retail stores using CSV files containing Store ID, SKU, Product Name, Price, 
+and Date,a solution architecture that considers the following components is required:
+
+Data Ingestion: 
+The solution needs to have a component that can ingest the CSV files containing the pricing feeds. 
+This component should be able to read the CSV files from a specific location (e.g., FTP server, S3 bucket),
+parse the data, and send it to the storage layer.
+
+Storage: 
+The pricing feeds need to be stored in a database that can handle large volumes of data and is scalable.
+A NoSQL database such as MongoDB or CosmosDB would be a good choice for this use case. But for relational model,
+SQL can be used with proper indexing & execution plan.
+
+Data Processing: 
+The solution should have a component that can process the pricing feeds and perform the necessary transformations 
+on the data. This component should be able to clean the data, validate it, and perform any necessary calculations.
+
+Data Access: 
+A component that allows users to query the pricing feeds stored in the database should be included in the solution. 
+This component could be a web application or an API that allows users to query the data based on different criteria
+such as date range, store ID, or SKU.
+
+Analytics:
+The solution should include a component that allows users to analyze the pricing feeds data. This component could be 
+a dashboard that provides visualizations and insights into the data.
+
+Security: 
+The solution should have proper security measures in place to ensure that only authorized users can access and modify 
+the pricing feeds data. Access control mechanisms such as authentication, authorization, and encryption should be
+implemented.
+
+Monitoring and Alerting:
+The solution should have monitoring and alerting mechanisms in place to detect any issues with data ingestion, 
+processing, or storage. This component should provide real-time notifications to the appropriate personnel so that 
+they can take corrective actions immediately.
+
+Scalability: 
+The solution should be designed to handle large volumes of data and be able to scale horizontally or vertically as 
+needed.
+
+***************************************
+High level solution architecture for search and edit pricing records, we need to consider--
+
+Data Storage: 
+A database system must be chosen to store the pricing records. A relational database system such as 
+PostgreSQL or SQL Server is a good choice for this task.
+
+Backend Services:
+The backend of the system should provide APIs to allow users to search and modify pricing records. 
+APIs can be developed using programming languages such as .NET, Golang, or Node.js.
+
+Frontend Application:
+A user interface must be designed to interact with the backend system. This can be achieved by developing a 
+web-based application or a desktop application using frameworks such as React, Angular, or Vue.js.
+
+Search Criteria: 
+The search functionality should allow users to search for pricing records using various criteria such as 
+product name, product category, price range, or any other relevant criteria. This can be achieved by providing a 
+search form with fields corresponding to each search criterion.
+
+Editing and Saving: 
+Once the user finds the desired pricing record, the system should allow them to edit and save changes. 
+This can be achieved by providing a form to modify the fields of the pricing record and a button to save changes 
+to the database.
+
+Authentication and Authorization: 
+To ensure the security of the system, it is important to implement authentication and authorization mechanisms 
+to control access to pricing records. This can be achieved by implementing a user login system with role-based 
+access control.
+
+
+So. it requires the integration of a database system, backend services, a frontend application, search criteria, 
+editing and saving functionality, authentication and authorization.

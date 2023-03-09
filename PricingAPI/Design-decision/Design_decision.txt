@@ -1,0 +1,39 @@
+﻿Design decision:
+
+
+Data Storage: 
+we need to decide on the data storage mechanism that we want to use to persist the pricing feeds. 
+we can choose a Relational Database Management System (RDBMS) like MySQL, PostgreSQL or NoSQL databases
+like MongoDB or as per requirements and scalability needs.
+
+File Upload Mechanism: 
+We need to decide on the file upload mechanism that we want to use to upload the CSV files. We can choose to build
+a custom file upload functionality or use an existing file upload library.
+
+Data Processing: 
+Once the CSV files are uploaded, we need to process the data to extract the required information like Store ID, SKU, 
+Product Name, Price, and Date. We can use a CSV parsing library to parse the CSV files and extract the data.
+
+Data Validation: 
+We need to validate the data to ensure that it meets the required format and business rules. We can use regular 
+expressions to validate the data.
+
+Data Storage Schema: 
+Need to decide on the schema for storing the pricing feeds in the database. we can create a table with columns 
+for Store ID, SKU, Product Name, Price, and Date.
+
+Data Indexing:
+We need to decide on the indexes that we want to create on the database to enable faster querying and retrieval of data. 
+we can create indexes on the Store ID, SKU, and Date columns to enable faster queries.
+
+Data Retrieval API: 
+we need to design an API that enables retrieval of pricing feeds based on Store ID, SKU, Date, or a combination of these. 
+we can use a RESTful API design pattern and choose a programming language and framework to build the API.
+
+Security: 
+we need to ensure that the data is stored securely and only authorized users can access it. we can use encryption,
+access controls, and user authentication mechanisms to secure the system.
+
+Monitoring and Logging: 
+We need to set up monitoring and logging mechanisms to detect and troubleshoot any issues with the system.
+we can use tools like Prometheus to monitor the system and log the data.

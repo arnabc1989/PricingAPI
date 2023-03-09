@@ -1,0 +1,31 @@
+﻿There are several standard non-functional requirements that a retail store chain with 3000 stores 
+across multiple countries would need to consider.
+These requirements would typically cover areas such as performance, scalability, security, and usability. 
+Here are some common non-functional requirements and how they can be addressed in the design:
+
+Performance: 
+With such a large number of stores, the system must be able to handle high volumes of traffic 
+and transactions without slowing down. This can be achieved by designing a distributed system that can scale horizontally
+as demand increases. The use of caching and load balancing techniques can also help improve performance.
+
+Scalability: 
+The system must be able to accommodate growth and changes in the business. This can be achieved by designing the system
+with modular components that can be easily added or removed as needed. Cloud-based infrastructure can also help with 
+scalability by allowing resources to be added or removed dynamically.
+
+Security: 
+The system must be secure to prevent data breaches and protect customer information. This can be achieved by implementing
+secure coding practices, using encryption and authentication mechanisms, and performing regular security audits.
+
+Usability: 
+The system must be user-friendly and easy to use for both customers and employees. This can be achieved by conducting 
+user testing and feedback sessions during the design process, and implementing an intuitive user interface that is 
+consistent across all stores.
+
+Availability: 
+The system must be available 24/7 to ensure that customers can shop at any time. This can be achieved by designing a 
+redundant architecture with failover mechanisms in place to ensure that if one component fails, another can take its 
+place without any interruption to service.
+
+It should prioritize the needs of the business and its customers, while taking into account the technical and operational
+requirements needed to support a large retail chain with multiple stores across different countries. 
